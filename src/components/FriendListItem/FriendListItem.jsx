@@ -4,7 +4,9 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
     <div className={css.userInfoBox}>
       <img src={avatar} alt="Avatar" width="96" />
       <p>{name}</p>
-      <p>{String(isOnline)}</p>
+      <p className={isOnline ? css.onlineStatus : css.offlineStatus}>
+        {isOnline ? "Online" : "Offline"}
+      </p>
     </div>
   );
 };
