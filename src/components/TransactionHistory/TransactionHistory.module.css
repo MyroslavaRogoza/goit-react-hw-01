@@ -1,0 +1,6 @@
+.transactionTableRow:nth-child(2n){
+    background-color: rgb(140, 90, 224);
+}
+.transactionTableRow:nth-child(2n+1){
+    background-color: rgb(238, 235, 242);
+}

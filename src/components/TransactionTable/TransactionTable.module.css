@@ -1,0 +1,11 @@
+.transactionTable{
+  border: 1px solid rgb(5, 0, 16);
+  border-collapse: collapse;
+  margin-top: 40px;
+  width: 50%;
+  margin: 40px auto;
+}
+.transactionHead {
+  background-color: rgb(34, 12, 142);
+  color: aliceblue;
+}

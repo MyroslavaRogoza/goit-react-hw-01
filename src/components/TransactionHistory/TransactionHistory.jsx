@@ -1,23 +1,10 @@
 import css from "./TransactionHistory.module.css";
 import TransactionItem from "../TransactionItem/TransactionItem";
-const TransactionTable = ({ children }) => {
-  return (
-    <table>
-      <thead>
-        <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
-        </tr>
-      </thead>
-      {children}
-    </table>
-  );
-};
+import TransactionTable from "../TransactionTable/TransactionTable";
 const TransactionHistory = ({ items }) => {
   const transactionMarkup = items.map((item) => {
     return (
-      <tr key={item.id}>
+      <tr key={item.id} className={css.transactionTableRow}>
         <TransactionItem
           type={item.type}
           amount={item.amount}

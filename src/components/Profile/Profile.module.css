@@ -19,10 +19,15 @@
   display: flex;
   flex-direction: column;
   padding: 50px;
-  border: 5px solid rgb(30, 30, 30, 0.5);
-  border-radius: 40%;
+  border: 3px solid rgb(30, 30, 30, 0.2);
+  transform: skew(-15deg);
+  background-color: rgba(155, 166, 182, 0.5);
+  box-shadow: 3px 1px 16px 0px rgba(64, 82, 157, 1);
 }
-.userDataName,
 .UserStatusContainerItemContent {
+  font-weight: 700;
+  transform: skew(15deg);
+}
+.userDataName {
   font-weight: 700;
 }

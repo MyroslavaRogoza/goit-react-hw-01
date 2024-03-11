@@ -1,9 +1,10 @@
+import css from './TransactionItem.module.css'
 const TransactionItem = ({type, amount, currency}) => {
   return (
     <>
-    <td>{type}</td>
-    <td>{amount}</td>
-    <td>{currency}</td>
+    <td className={css.transactionData}>{type}</td>
+    <td className={css.transactionData}>{amount}</td>
+    <td className={css.transactionData}>{currency}</td>
   </>
   )
 }
